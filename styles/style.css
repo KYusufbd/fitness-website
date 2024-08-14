@@ -1,0 +1,49 @@
+/* Universal style */
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* temporary */
+.bgcy {
+    background-color: yellowgreen;
+}
+
+/* Shared style */
+.flxr {
+    display: flex;
+    flex-direction: row;
+}
+
+.flxc {
+    display: flex;
+    flex-direction: column;
+}
+
+.jcac {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gaps */
+.g48 {
+    gap: 48px;
+}
+
+.pw {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.w100 {
+    width: 100%;
+}
+
+/* Style for header */
+nav {
+    justify-content: space-between;
+}
