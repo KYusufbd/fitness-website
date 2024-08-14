@@ -7,6 +7,7 @@
 :root {
     --col: #ffffff;
     --bgc: #000000;
+    --orange: #e6533c;
 }
 
 
@@ -24,7 +25,7 @@ a {
     color: var(--col);
 }
 
-/* temporary */
+/* Temporary. Just for testing perpose */
 .bgcy {
     background-color: yellowgreen;
 }
@@ -41,11 +42,16 @@ a {
 }
 
 .jcac {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* Gaps */
+.g8 {
+    gap: 8px;
+}
+
 .g48 {
     gap: 48px;
 }
@@ -67,4 +73,37 @@ body {
 
 nav {
     justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    color: var(--orange);
+    font: italic normal 800 36px Inter;
+}
+
+nav .menu li{
+    font: 400 18px Inter;
+    padding: 8px 20px;
+    text-align: center;
+    border-radius: 38px;
+}
+
+nav .menu li:hover {
+    background-color: var(--orange);
+    font-weight: 600;
+}
+
+nav .menu-bars {
+    display: none;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 576px) {
+    nav .menu {
+        display: none;
+    }
+
+    nav .menu-bars {
+        display: inline;
+    }
 }
