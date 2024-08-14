@@ -11,7 +11,7 @@
     <script>
         const menuToggle = () => {
             const x = document.getElementById('navmenu');
-            if (x.style.display === "none") {
+            if (x.style.display !== "block") {
                 x.style.display = "block";
             }
             else {
@@ -21,21 +21,50 @@
     </script>
 </head>
 <body>
-    <header class="flxr pw">
-        <nav class="flxr w100">
-            <div class="logo flxr jcac">
-                <a href="/">Fitness</a>
+    <div class="hero-bg w100">
+        <header class="flxc pw">
+            <nav class="flxr w100">
+                <div class="logo flxr jcac">
+                    <a href="/">Fitness</a>
+                </div>
+                <img class="menu-bars" onclick="menuToggle()" src="./assets/icons/bars-solid-white.svg" height="24px" width="24px" alt="menu-bars">
+                <ul class="menu g8" id="navmenu">
+                    <li class="jcac"><a href="/">Home</a></li>
+                    <li class="jcac"><a href="/">Service</a></li>
+                    <li class="jcac"><a href="/">Contact</a></li>
+                    <li class="jcac"><a href="/">About</a></li>
+                </ul>
+            </nav>
+            <div class="hero-sect w100 flxr">
+                <div class="txt-btn flxc g28">
+                    <div class="txt flxc g28">
+                        <h1>Get body in <span class="miama">shape</span> & stay healthy</h1>
+                        <p class="pgc">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                    </div>
+                    <div class="btns flxr">
+                        <button><a href="/">Join Club Now!</a></button>
+                        <button><a href="/">Download App</a></button>
+                    </div>
+                </div>
+                <div class="img jcac">
+                    <img class="hero-image" src="./assets/images/hero_image.png" height="580px" alt="">
+                    <div class="card card1 g8 flxc">
+                        <h2>500+</h2>
+                        <p>Free Workout Videos</p>
+                    </div>
+                    <div class="card card2 g12 flxr jcac">
+                        <div class="circle"></div>
+                        <div class="txt flxc g8">
+                            <h5>350+</h5>
+                            <p>Video tutorial</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img class="menu-bars" onclick="menuToggle()" src="./assets/icons/bars-solid-white.svg" height="24px" width="24px" alt="menu-bars">
-            <ul class="menu g8" id="navmenu">
-                <li class="jcac"><a href="/">Home</a></li>
-                <li class="jcac"><a href="/">Service</a></li>
-                <li class="jcac"><a href="/">Contact</a></li>
-                <li class="jcac"><a href="/">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main></main>
+        </header>
+    </div>
+    <main>
+    </main>
     <footer></footer>
 </body>
 </html>

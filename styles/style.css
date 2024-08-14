@@ -6,6 +6,7 @@
 /* Variables */
 :root {
     --col: #ffffff;
+    --col2: #ffffff80;
     --bgc: #000000;
     --orange: #e6533c;
 }
@@ -21,9 +22,29 @@
     font-style: normal;
 }
 
+html {
+    font-size: 16px;
+}
+
 a {
     text-decoration: none;
     color: var(--col);
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h5 {
+    font-size: 24px;
 }
 
 /* Temporary. Just for testing perpose */
@@ -53,29 +74,60 @@ a {
     gap: 8px;
 }
 
+.g12 {
+    gap: 12px;
+}
+
+.g16 {
+    gap: 16px;
+}
+
+.g24 {
+    gap: 24px;
+}
+
+.g28 {
+    gap: 28px;
+}
+
+.g32 {
+    gap: 32px;
+}
+
 .g48 {
     gap: 48px;
 }
 
 .pw {
-    max-width: 1060px;
+    max-width: 1120px;
     margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .w100 {
     width: 100%;
 }
 
+.pgc {
+    color: var(--col2);
+}
+
 /* Style for header */
 body {
-    padding: 52px 30px;
     color: var(--col);
     background-color: var(--bgc);
+}
+
+.hero-bg {
+    background-image: linear-gradient(180deg, #111111, #77777700);
+    background-repeat: no-repeat;
 }
 
 nav {
     justify-content: space-between;
     align-items: center;
+    margin-top: 52px;
 }
 
 nav .logo a {
@@ -104,6 +156,77 @@ nav .menu-bars {
     display: none;
 }
 
+/* Style for hero section */
+.hero-sect {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-sect h1{
+    font: normal normal 900 78px/90px "Inter";
+}
+
+.miama {
+    font-family: Miama;
+    font-weight: 400;
+    font-size: 160px;
+}
+
+.txt-btn {
+    max-width: 580px;
+}
+
+.btns {
+    gap: 14px;
+}        
+
+.btns button {
+    color: var(--col);
+    background-color: transparent;
+    border-radius: 42px;
+    border: solid 1px #ffffff;
+    height: 54px;
+    width: 224px;
+    font: 600 18px "Inter";
+}
+
+.btns button:hover {
+    background-color: var(--orange);
+    border: none;
+}
+
+.hero-sect .card {
+    position: absolute;
+    backdrop-filter: blur(20px);
+    background-color: #ffffff1a;
+    padding: 16px 24px;
+    width: max-content;
+    border-radius: 12px;
+    font-weight: 900;
+}
+
+.hero-sect .card p{
+    font: 400 13px "Inter";
+    color: #ffffffa6;
+}
+
+.hero-sect .card .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--orange);
+}
+
+.hero-sect .card1 {
+    top: 260px;
+    right: 140px;
+}
+
+.hero-sect .card2 {
+    left: 56vw;
+    bottom: 63px;
+}
+
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
     nav .menu li {
@@ -112,12 +235,17 @@ nav .menu-bars {
 }
 
 @media only screen and (max-width: 612px) {
-    body {
-        padding: 58px 20px;
+    pw {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .logo, .menu-bars {
         z-index: 3;
+    }
+
+    nav {
+        margin-top: 58px;
     }
 
     nav .menu {
