@@ -8,6 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Fitness Website</title>
+    <script>
+        const menuToggle = () => {
+            const x = document.getElementById('navmenu');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="flxr pw">
@@ -15,13 +26,13 @@
             <div class="logo flxr jcac">
                 <a href="/">Fitness</a>
             </div>
-            <ul class="menu flxr g8">
+            <img class="menu-bars" onclick="menuToggle()" src="./assets/icons/bars-solid-white.svg" height="24px" width="24px" alt="menu-bars">
+            <ul class="menu g8" id="navmenu">
                 <li class="jcac"><a href="/">Home</a></li>
                 <li class="jcac"><a href="/">Service</a></li>
                 <li class="jcac"><a href="/">Contact</a></li>
                 <li class="jcac"><a href="/">About</a></li>
             </ul>
-            <img class="menu-bars" onclick="" src="./assets/icons/bars-solid-white.svg" height="24px" width="24px" alt="menu-bars">
         </nav>
     </header>
     <main></main>

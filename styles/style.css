@@ -14,6 +14,7 @@
 /* Universal style */
 * {
     box-sizing: border-box;
+    margin: 0;
     list-style: none;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -67,6 +68,7 @@ a {
 
 /* Style for header */
 body {
+    padding: 52px 30px;
     color: var(--col);
     background-color: var(--bgc);
 }
@@ -79,6 +81,11 @@ nav {
 nav .logo a {
     color: var(--orange);
     font: italic normal 800 36px Inter;
+}
+
+nav .menu {
+    display: flex;
+    flex-direction: row;
 }
 
 nav .menu li{
@@ -98,9 +105,32 @@ nav .menu-bars {
 }
 
 /* Responsive styles */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
+    nav .menu li {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 612px) {
+    body {
+        padding: 58px 20px;
+    }
+
+    .logo, .menu-bars {
+        z-index: 3;
+    }
+
     nav .menu {
         display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* display: block; */
+        width: 100%;
+        background-color: #222222;
+        border-radius: 0 0 20px 20px;
+        padding: 128px 0 48px 0;
+        z-index: 2;
     }
 
     nav .menu-bars {
