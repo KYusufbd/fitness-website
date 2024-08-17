@@ -102,6 +102,10 @@ h5 {
     gap: 48px;
 }
 
+.g60 {
+    gap: 60px;
+}
+
 .pw {
     max-width: 1120px;
     margin: 0 auto;
@@ -279,6 +283,51 @@ nav .menu-bars {
     left: -24px;
 }
 
+
+/* Styles for Change Habit section */
+.sect2 .sect-head {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.sect2 .sect-head p {
+    max-width: 66%;
+}
+
+.sect2 .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+    gap: 42px;
+}
+
+.sect2 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    text-align: center;
+}
+
+.sect2 .card .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.sect2 .card p {
+    font-size: 14px;
+    max-width: 240px;
+}
+
+.change-habits-image {
+    border-radius: 50%;
+    width: 180px;
+    margin: 0 auto;
+}
+
+
 /* Responsive styles */
 @media only screen and (max-width: 1240px) {
     .hero-sect .card1 {
@@ -294,12 +343,14 @@ nav .menu-bars {
     .play-icon {
         left: 38px;
     }
+
 }
 
 @media only screen and (max-width: 768px) {
     nav .menu li {
         font-size: 16px;
     }
+
 }
 
 @media only screen and (max-width: 612px) {
@@ -379,5 +430,4 @@ nav .menu-bars {
     .hero-sect .card1 {
         top: -12px;
     }
-        
 }
