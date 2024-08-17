@@ -174,10 +174,15 @@ nav .menu-bars {
 .hero-bg {
     background-image: url(../assets/images/Hero_background_color.svg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-sect .txt-btn {
     margin: 0 auto;
+}
+
+.hero-sect .txt {
+    max-width: 90% !important;
 }
 
 .hero-sect h1{
@@ -190,8 +195,13 @@ nav .menu-bars {
     font-size: 160px;
 }
 
-.btns {
+.hero-sect .btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     gap: 14px;
+    max-width: 96VW;
+    flex-wrap: wrap;
 }        
 
 .btns button {
@@ -212,17 +222,23 @@ nav .menu-bars {
 .hero-images-wrapper {
     overflow: visible;
     margin: 0 auto;
+    width: 100%;
 }
 
 .hero-images {
     position: relative;
+    margin: 0 auto;
     width: 434px;
+    max-width: 100%;
 }
 
 .hero-image {
     position: relative;
+    left: -12px;
     bottom: 0;
-    margin: 0 auto;
+    max-height: 580px;
+    width: auto;
+    max-width: 66vw;
 }
 
 .hero-sect .card {
@@ -276,7 +292,7 @@ nav .menu-bars {
     }
 
     .play-icon {
-        left: 32px;
+        left: 38px;
     }
 }
 
@@ -305,7 +321,6 @@ nav .menu-bars {
         position: absolute;
         top: 0;
         left: 0;
-        /* display: block; */
         width: 100%;
         background-color: #222222;
         border-radius: 0 0 20px 20px;
@@ -316,4 +331,53 @@ nav .menu-bars {
     nav .menu-bars {
         display: inline;
     }
+
+    .hero-sect {
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    }
+
+    .hero-sect h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .miama {
+        font-size: 74px;
+    }
+
+    .hero-sect .btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 14px;
+        width: 100%;
+    }
+    
+    .hero-sect .btns button {
+        width: 100%;
+    }
+
+    .btns .club {
+        display: none;
+    }
+
+    .hero-image {
+        left: -28px;
+    }
+
+    .hero-sect .card h2 {
+        font-size: 30px;
+    }
+
+    .hero-sect .card h5 {
+        font-size: 18px;
+    }
+
+    .hero-sect .card p {
+        font-size: 10px;
+    }
+
+    .hero-sect .card1 {
+        top: -12px;
+    }
+        
 }
