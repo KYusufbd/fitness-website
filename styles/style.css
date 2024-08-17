@@ -113,6 +113,11 @@ h5 {
     width: 100%;
 }
 
+.sect {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .pgc {
     color: var(--col2);
 }
@@ -123,15 +128,11 @@ body {
     background-color: var(--bgc);
 }
 
-.hero-bg {
-    background-image: linear-gradient(180deg, #111111, #77777700);
-    background-repeat: no-repeat;
-}
-
 nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 52px;
+    padding-bottom: 32px;
 }
 
 nav .logo a {
@@ -165,8 +166,18 @@ nav .menu-bars {
 
 /* Style for hero section */
 .hero-sect {
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(482px, auto));
+    row-gap: 64px;
+}
+
+.hero-bg {
+    background-image: url(../assets/images/Hero_background_color.svg);
+    background-repeat: no-repeat;
+}
+
+.hero-sect .txt-btn {
+    margin: 0 auto;
 }
 
 .hero-sect h1{
@@ -177,14 +188,6 @@ nav .menu-bars {
     font-family: Miama;
     font-weight: 400;
     font-size: 160px;
-}
-
-.txt-btn {
-    width: 50%;
-}
-
-.txt-btn .txt {
-    max-width: 580px;
 }
 
 .btns {
@@ -207,19 +210,19 @@ nav .menu-bars {
 }
 
 .hero-images-wrapper {
-    width: 50%;
     overflow: visible;
+    margin: 0 auto;
 }
 
 .hero-images {
     position: relative;
-    width: 100%;
+    width: 434px;
 }
 
 .hero-image {
     position: relative;
-    right: -62px;
     bottom: 0;
+    margin: 0 auto;
 }
 
 .hero-sect .card {
@@ -252,15 +255,31 @@ nav .menu-bars {
 
 .hero-sect .card2 {
     bottom: 72px;
-    left: 64px;
+    left: -64px;
 }
 
 .play-icon {
     position: absolute;
-    left: 112px;
+    left: -24px;
 }
 
 /* Responsive styles */
+@media only screen and (max-width: 1240px) {
+    .hero-sect .card1 {
+        top: 70px;
+        right: 0px;
+    }
+
+    .hero-sect .card2 {
+        left: 0;
+        bottom: 132px;
+    }
+
+    .play-icon {
+        left: 32px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     nav .menu li {
         font-size: 16px;
