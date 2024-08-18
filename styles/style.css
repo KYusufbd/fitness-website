@@ -23,7 +23,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
@@ -98,6 +98,10 @@ h5 {
     gap: 32px;
 }
 
+.g36 {
+    gap: 36px;
+}
+
 .g48 {
     gap: 48px;
 }
@@ -120,6 +124,9 @@ h5 {
 .sect {
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: max-content;
 }
 
 .pgc {
@@ -173,6 +180,8 @@ nav .menu-bars {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(482px, auto));
     row-gap: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .hero-bg {
@@ -199,6 +208,10 @@ nav .menu-bars {
     font-size: 160px;
 }
 
+.hero-sect p {
+    font-size: 16px;
+}
+
 .hero-sect .btns {
     display: flex;
     flex-direction: row;
@@ -208,7 +221,7 @@ nav .menu-bars {
     flex-wrap: wrap;
 }        
 
-.btns button {
+.btn {
     color: var(--col);
     background-color: transparent;
     border-radius: 42px;
@@ -218,7 +231,7 @@ nav .menu-bars {
     font: 600 18px "Inter";
 }
 
-.btns button:hover {
+.btn:hover {
     background-color: var(--orange);
     border: none;
 }
@@ -317,7 +330,6 @@ nav .menu-bars {
 }
 
 .sect2 .card p {
-    font-size: 14px;
     max-width: 240px;
 }
 
@@ -325,6 +337,41 @@ nav .menu-bars {
     border-radius: 50%;
     width: 180px;
     margin: 0 auto;
+}
+
+/* Style for Run Section */
+.sect3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    column-gap: 64px;
+    row-gap: 64px;
+    align-items: center;
+    background-color: #ffffff1e;
+    border-radius: 18px;
+    height: min-content;
+}
+
+.sect3 .txt-btn {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.sect3 h1 {
+    max-width: 360px;
+}
+
+.sect3 .img {
+    height: 312px;
+    max-width: 80%;
+    overflow: hidden;
+    border-radius: 18px;
+    margin: 0 auto;
+}
+
+.sect3 img {
+    margin-left: -600px;
+    margin-top: -180px;
+    height: 840px;
 }
 
 
@@ -429,5 +476,13 @@ nav .menu-bars {
 
     .hero-sect .card1 {
         top: -12px;
+    }
+
+    .sect3 {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .sect3 img {
+        margin-left: -696px;
     }
 }
