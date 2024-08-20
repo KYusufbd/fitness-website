@@ -454,6 +454,33 @@ nav .menu-bars {
     z-index: 4;
 }
 
+.overlay p {
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 24px;
+    max-width: 176px;
+}
+
+.btm {
+    left: 0;
+    bottom: 0;
+}
+
+.tprt {
+    top: 0;
+    right: 0;
+}
+
+.tplt {
+    top: 0;
+    left: 0;
+}
+
+.blk {
+    color: #000000;
+}
+
 .cyan {
     background-color: #06ffd180;
 }
