@@ -476,6 +476,80 @@ nav .menu-bars {
     max-width: 640px;
 }
 
+.calc-bg {
+    background-color: #222222;
+}
+
+.calc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 64px;
+    flex-wrap: wrap;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.calc h4 {
+    font-weight: 900;
+}
+
+.bmi-calc {
+    max-width: 578px;
+}
+
+.bmi-chart {
+    gap: 54px;
+}
+
+.bmi-chart table {
+    color: #ffffff80;
+    border-collapse: collapse;
+    border: 1px solid #ffffff1a;
+    width: 310px;
+    text-align: left;
+}
+
+.bmi-chart th, .bmi-chart td {
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #ffffff1a;
+}
+
+.bmi-chart th {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.calc-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.calc-form .wide {
+    grid-column: 1 / span 2;
+}
+
+.calc-form input, .calc-form select {
+    color: #ffffff99;
+    background-color: #ffffff1a;
+    border-radius: 8px;
+    padding-left: 20px;
+    height: 48px;
+    border: none;
+}
+
+.calc-form input::placeholder, .calc-form select {
+    font-size: 16px;
+    color: #ffffff99;
+}
+
+.calc-form select option {
+    color: #000000;
+}
+
 
 /* Responsive styles */
 @media only screen and (max-width: 1240px) {
