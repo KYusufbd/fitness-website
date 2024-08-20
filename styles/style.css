@@ -57,6 +57,10 @@ h5 {
     font-size: 24px;
 }
 
+h6 {
+    font-size: 20px;
+}
+
 /* Temporary. Just for testing perpose */
 .bgcy {
     background-color: yellowgreen;
@@ -138,6 +142,10 @@ h5 {
     margin-top: calc((var(--sect-gap) * .5) - 32px);
     margin-bottom: calc((var(--sect-gap) * .5) - 32px);
     height: max-content;
+}
+
+.sect-head h1 {
+    font-weight: 900;
 }
 
 .pgc {
@@ -548,6 +556,57 @@ nav .menu-bars {
 
 .calc-form select option {
     color: #000000;
+}
+
+
+/* Styles for Sect-6/ Our team section */
+.sect6 {
+    gap: var(--sect-inside-gap);
+}
+
+.sect6 .sect-head {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 640px;
+}
+
+.team-imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
+    gap: 20px;
+    background-color: #ffffff1a;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.trainer-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.trainer-img img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+}
+
+.trainer-img .img-title {
+    position: absolute;
+    gap: 4px;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.trainer-img .img-title h1 {
+    font-weight: 900;
+}
+
+.trainer-img .img-title p {
+    color: var(--col2);
 }
 
 
