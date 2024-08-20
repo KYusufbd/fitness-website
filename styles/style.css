@@ -66,6 +66,10 @@ h6 {
     background-color: yellowgreen;
 }
 
+.hide {
+    display: none !important;
+}
+
 /* Shared style */
 .flxr {
     display: flex;
@@ -503,18 +507,21 @@ nav .menu-bars {
 }
 
 .bmi-calc {
-    max-width: 578px;
+    width: 578px;
+    max-width: 100%;
 }
 
 .bmi-chart {
     gap: 54px;
+    width: 310px;
+    max-width: 100%;
 }
 
 .bmi-chart table {
     color: #ffffff80;
     border-collapse: collapse;
     border: 1px solid #ffffff1a;
-    width: 310px;
+    width: 100%;
     text-align: left;
 }
 
@@ -534,6 +541,7 @@ nav .menu-bars {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
+    width: 100%;
 }
 
 .calc-form .wide {
@@ -547,6 +555,7 @@ nav .menu-bars {
     padding-left: 20px;
     height: 48px;
     border: none;
+    width: 100%;
 }
 
 .calc-form input::placeholder, .calc-form select {
@@ -574,7 +583,7 @@ nav .menu-bars {
 
 .team-imgs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
     gap: 20px;
     background-color: #ffffff1a;
     padding: 20px;
@@ -646,6 +655,10 @@ nav .menu-bars {
     .sect3 h1 {
         font-size: 36px;
         max-width: 280px;
+    }
+
+    .team-imgs {
+        grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
     }
 
 }
