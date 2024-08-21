@@ -37,6 +37,10 @@ a {
     color: var(--col);
 }
 
+ul {
+    padding-left: 0;
+}
+
 h1 {
     font-size: 48px;
 }
@@ -129,6 +133,7 @@ h6 {
 }
 
 .pw {
+    width: 100%;
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
@@ -169,7 +174,7 @@ nav {
     padding-bottom: 32px;
 }
 
-nav .logo a {
+.logo a {
     color: var(--orange);
     font: italic normal 800 36px Inter;
 }
@@ -646,6 +651,52 @@ nav .menu-bars {
 }
 
 
+/* Styles for footer section */
+footer {
+    background-color: #ffffff1a;
+    margin-top: calc((var(--sect-gap) * .5) - 32px);
+    padding-top: 32px;
+    gap: 32px;
+}
+
+footer .sect-head {
+max-width: 420px;
+gap: 24px;
+}
+
+.footer-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 96px;
+}
+
+.foot-nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 96px;
+}
+
+.foot-nav .col1, .foot-nav .col2 {
+    gap: 38px;
+}
+
+.foot-nav ul {
+    gap: 12px;
+}
+
+.foot-nav a {
+    color: var(--col2);
+}
+
+.all-rights {
+    color: var(--col2);
+    font-size: 20px;
+    padding: 36px;
+    border-top: 2px solid #ffffff1a;
+    text-align: center;
+}
+
+
 /* Responsive styles */
 @media only screen and (max-width: 1240px) {
     .hero-sect .card1 {
@@ -703,6 +754,10 @@ nav .menu-bars {
 
     h1 {
         font-size: 32px;
+    }
+
+    h4 {
+        font-size: 16px;
     }
 
     .logo, .menu-bars {
